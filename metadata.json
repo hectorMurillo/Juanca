@@ -1,0 +1,6 @@
+{
+  "name": "Los Aguachiles del Juanca",
+  "description": "Menú digital interactivo con pedidos directos por WhatsApp, mariscos estilo Sinaloa, tostadas, aguachiles, ceviches y bebidas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
