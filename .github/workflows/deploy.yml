@@ -24,16 +24,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Se removió: cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
-        # Si la app requiere variables de entorno en tiempo de compilación:
-        # env:
-        #   VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -50,4 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
